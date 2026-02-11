@@ -8,10 +8,12 @@ require("dotenv").config();
 const homeRoutes = require("./routes/home");
 const adminRoutes = require("./routes/admin");
 
+const frontend_URI = "https://dribbleclone-1fi7.onrender.com";
+
 // ✅ FIXED CORS for Vite
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: `${frontend_URI}`,
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
