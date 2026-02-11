@@ -10,6 +10,11 @@ const adminRoutes = require("./routes/admin");
 
 const frontend_URI = "https://dribbleclone-1fi7.onrender.com";
 
+//testing route
+app.get("/", (req, res) => {
+  res.json({ message: "Your backend is live" });
+});
+
 // ✅ FIXED CORS for Vite
 app.use(
   cors({
@@ -26,13 +31,17 @@ app.use("/api", router); // POST /api/auth/login
 app.use("/api/home", homeRoutes);
 app.use("/api/admin", adminRoutes);
 
+// ✅ WAIT FOR DB BEFORE STARTING SERVER
 const startServer = async () => {
   try {
     await MongoConnect();
-    app.listen(PORT, () => console.log(`✅ Backend: http://localhost:${PORT}`));
+    app.listen(PORT, () => {
+      console.log(`✅ Backend is live At ${PORT} | MongoDB Connected`);
+    });
   } catch (error) {
-    console.error("💥 Failed:", error);
+    console.error("❌ Failed to start server:", error);
     process.exit(1);
   }
 };
+
 startServer();
