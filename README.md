@@ -7,8 +7,7 @@ This project was developed within a **two-day timeline** to demonstrate my front
 
 I genuinely enjoyed building this project and applying my practical knowledge in a real-world scenario.
 
-🔗 **Live Project Link:** (Add your deployed link here)  
-🔗 **GitHub Repository:** (Add your repository link here)
+🔗 **Live Project Link: https://dribbleclone-1fi7.onrender.com 
 
 > Note: The `node_modules` folder (~180MB) is excluded from the repository. Only the required source code is included.
 
