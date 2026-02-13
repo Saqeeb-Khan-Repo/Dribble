@@ -77,5 +77,11 @@ Due to the two-day time constraint, some sections include structured banner layo
 
 ---
 
-# 📁 Project Structure
+# Setup to run
+-first fork this repo
+-cd frontend 
+-npm install react-router-dom react-icons jwt-encoder
+-npm run dev
+-note: the login setup currenlty wor only in the live link and in the localhost its showing an error which will be resolved qucikly
+
 
