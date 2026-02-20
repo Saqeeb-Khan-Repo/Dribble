@@ -78,10 +78,15 @@ Due to the two-day time constraint, some sections include structured banner layo
 ---
 
 # Setup to run
--first fork this repo
--cd frontend 
--npm install react-router-dom react-icons jwt-encoder
+-First fork this repo
+
+-cd frontend
+ 
+-npm install react-router-dom react-icons
+ jwt-encoder
+
 -npm run dev
+
 -Your FrontEnd is live at localhost:5174
 
 
