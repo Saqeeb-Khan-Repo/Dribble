@@ -82,6 +82,6 @@ Due to the two-day time constraint, some sections include structured banner layo
 -cd frontend 
 -npm install react-router-dom react-icons jwt-encoder
 -npm run dev
--note: the login setup currenlty wor only in the live link and in the localhost its showing an error which will be resolved qucikly
+-Your FrontEnd is live at localhost:5174
 
 
